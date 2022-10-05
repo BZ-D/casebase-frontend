@@ -25,3 +25,8 @@
 	align-items: center;
 	margin-bottom: 40px;
 }
+
+.hintCenter {
+	position: absolute; left: 50%; top: 40%;
+ 	transform: translate(-50%, -50%);
+}

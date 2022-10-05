@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.css';
 import { useSearchParams } from "react-router-dom";
-import { message, Spin, Pagination } from 'antd';
+import { message, Spin, Pagination, Result } from 'antd';
 import SearchBar from '../../components/SearchBar';
 import CaseCard from '../../components/CaseCard';
 import { getFilesAPI } from '../../api/file';
@@ -24,8 +24,8 @@ const Home: React.FC = () => {
 		date: searchParams.get('order')
 	});
 
-	// 保存搜索到的文件列表
-	const [files, setFiles] = useState([]);
+	const [files, setFiles] = useState([]); // 保存搜索到的文件列表
+	const [searching, setSearching] = useState(true); // 显示加载动画
 
 	// 搜索文件列表，初始化数据
 	useEffect(() => {
@@ -39,6 +39,7 @@ const Home: React.FC = () => {
 
 		getFilesAPI(payload).then(res => {
 			setFiles(res);
+			setSearching(false);
 		});
 	}, [filter, sorter]);
 
@@ -61,7 +62,8 @@ const Home: React.FC = () => {
 			});
 			return;
 		}
-		setFiles([]);
+		setFiles([]); // 清除文件列表
+		setSearching(true); // 显示加载动画
 		setFilter({
 			date: {
 				startDate: startTime,
@@ -86,15 +88,6 @@ const Home: React.FC = () => {
 
 	return (
 		<div className={styles.Home}>
-			{
-        // 加载动画
-        files.length === 0 &&
-        <Spin
-          style={{position: "fixed", top: "40vh", left: "40%"}}
-          tip="正在检索相关文件，可能需要几秒钟"
-        />
-      }
-
 			<SearchBar className={styles.homeSearchBar} handleSearch={handleSearch} showTitle={false} />
 			{
 				files.length !== 0 && (
@@ -121,6 +114,24 @@ const Home: React.FC = () => {
 					}
 				</div>)
 			}
+
+			{
+        // 加载动画
+        searching &&
+        <Spin
+					className={styles.hintCenter}
+          tip="正在检索相关文件，可能需要几秒钟"
+        />
+      }
+
+			{
+        // 无内容提示
+        !searching && files.length === 0 &&
+				<Result
+					className={styles.hintCenter}
+					title="暂无检索结果，请稍后再试"
+  			/>
+      }
 		</div>
 	)
 };
