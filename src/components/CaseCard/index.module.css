@@ -1,0 +1,20 @@
+.CaseCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 150px;
+  transition: all 0.4s ease 0s;
+}
+
+.CaseCard:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.cardItem {
+  width: 100%;
+  min-height: 150px;
+  font-size: 16px;
+  color:rgb(84, 84, 84);
+}

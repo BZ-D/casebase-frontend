@@ -1,0 +1,26 @@
+.Home {
+	background: url("../../assets/pics/bg.png");
+	width: 100%;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.btnArea {
+	position: fixed;
+	top: 15px;
+	right: 25px;
+
+	display: flex;
+	flex-direction: row;
+	column-gap: 10px;
+}
+
+.introSearchBar {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 10%;
+}
