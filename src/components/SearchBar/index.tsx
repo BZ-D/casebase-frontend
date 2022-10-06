@@ -10,6 +10,7 @@ interface IProp {
   className?: string;
   handleSearch: any; // function(obj)
   showTitle: boolean; // default true
+  defaultValue?: string|null;
 }
 
 const { Search } = Input;
@@ -33,6 +34,7 @@ const SearchBar: React.FC<IProp> = (props) => {
         placeholder="请在此输入案例内容关键词"
         enterButton="检索"
         size="large"
+        defaultValue={props.defaultValue ? props.defaultValue : ''}
         maxLength={30}
         onSearch={(value, event) => {
           props.handleSearch({

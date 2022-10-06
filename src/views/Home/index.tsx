@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.css';
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import { message, Spin, Pagination, Result } from 'antd';
 import SearchBar from '../../components/SearchBar';
 import CaseCard from '../../components/CaseCard';
@@ -10,6 +10,8 @@ const Home: React.FC = () => {
   const [searchParams] = useSearchParams(); // 取查询参数
 	const [currentPage, setCurrentPage] = useState(1); // 换页用
 	const [currentPageSize, setCurrentPageSize] = useState(3); // 改变页面大小用
+
+	const navigate = useNavigate();
 
 	// 再次搜索用
 	const [filter, setFilter] = useState({
@@ -29,6 +31,12 @@ const Home: React.FC = () => {
 
 	// 搜索文件列表，初始化数据
 	useEffect(() => {
+		if (!filter.content) {
+			// 地址栏content若为0，跳到intro页
+			navigate('/');
+			return;
+		}
+
 		const payload = {
 			currentPage,
 			currentPageSize,
@@ -36,7 +44,6 @@ const Home: React.FC = () => {
 			pageNum,
 			sorter
 		};
-
 		getFilesAPI(payload).then(res => {
 			setFiles(res);
 			setSearching(false);
@@ -64,6 +71,8 @@ const Home: React.FC = () => {
 		}
 		setFiles([]); // 清除文件列表
 		setSearching(true); // 显示加载动画
+
+		navigate(`/search?kwd=${content}&st=${startTime}&et=${endTime}&order=${order}`); // 更新地址栏url
 		setFilter({
 			date: {
 				startDate: startTime,
@@ -88,7 +97,12 @@ const Home: React.FC = () => {
 
 	return (
 		<div className={styles.Home}>
-			<SearchBar className={styles.homeSearchBar} handleSearch={handleSearch} showTitle={false} />
+			<SearchBar
+				className={styles.homeSearchBar}
+				handleSearch={handleSearch}
+				showTitle={false}
+				defaultValue={filter.content}
+			/>
 			{
 				files.length !== 0 && (
 				<div className={styles.caseList}>
@@ -129,7 +143,9 @@ const Home: React.FC = () => {
         !searching && files.length === 0 &&
 				<Result
 					className={styles.hintCenter}
+					status="404"
 					title="暂无检索结果，请稍后再试"
+					subTitle="请尝试调整搜索日期范围或关键词。"
   			/>
       }
 		</div>
