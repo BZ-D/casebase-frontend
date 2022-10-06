@@ -31,7 +31,7 @@ const Home: React.FC = () => {
 
 	// 搜索文件列表，初始化数据
 	useEffect(() => {
-		if (!filter.content) {
+	  if (!filter.content) {
 			// 地址栏content若为0，跳到intro页
 			navigate('/');
 			return;

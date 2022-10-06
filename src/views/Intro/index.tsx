@@ -27,7 +27,11 @@ const Intro: React.FC = () => {
 			return;
 		}
 		navigate(`/search?kwd=${content}&st=${startTime}&et=${endTime}&order=${order}`);
-	}
+	};
+
+  const gotoWorkbench = () => {
+    navigate('/workbench/cockpit');
+  };
 
 	return (
 		<div className={styles.Home}>
@@ -35,7 +39,7 @@ const Intro: React.FC = () => {
 				<Button type="default" shape="round" icon={<UserOutlined />} size="large">
 					小组信息
 				</Button>
-				<Button type="default" shape="round" icon={<ToolOutlined />} size="large">
+				<Button type="default" shape="round" icon={<ToolOutlined />} size="large" onClick={gotoWorkbench}>
 					前往工作台
 				</Button>
 			</div>
