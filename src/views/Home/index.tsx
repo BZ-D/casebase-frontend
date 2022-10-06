@@ -70,6 +70,7 @@ const Home: React.FC = () => {
 			return;
 		}
 		setFiles([]); // 清除文件列表
+		setCurrentPageSize(3); // 恢复默认3项每页
 		setSearching(true); // 显示加载动画
 
 		navigate(`/search?kwd=${content}&st=${startTime}&et=${endTime}&order=${order}`); // 更新地址栏url

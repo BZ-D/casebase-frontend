@@ -2,8 +2,8 @@ import { axios } from "../utils/request";
 
 const FILE_API_PREFIX = '/api/document';
 
-export const getFilesAPI = (payload: any) => {
-  return axios({
+export const getFilesAPI = async (payload: any) => {
+  const res = await axios({
     url: `${FILE_API_PREFIX}/getFiles`,
     method: "POST",
     data: {
@@ -13,16 +13,14 @@ export const getFilesAPI = (payload: any) => {
       pageNum: payload.pageNum,
       sorter: payload.sorter
     }
-  }).then(res => {
-    return res.data.content;
   });
+  return res.data.content;
 }
 
-export const getFileByIdAPI = (id: number) => {
-  return axios({
+export const getFileByIdAPI = async (id: number) => {
+  const res = await axios({
     url: `${FILE_API_PREFIX}/getFileById/${id}`,
     method: 'GET'
-  }).then(res => {
-    return res.data.content;
   });
+  return res.data.content;
 }
