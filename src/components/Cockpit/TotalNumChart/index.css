@@ -1,0 +1,41 @@
+.total-num-chart-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px 0 0 15px;
+}
+
+.total-num-chart {
+  width: 100%;
+}
+
+#total-num-pie {
+  width: calc(50%);
+  height: 600px;
+  margin-bottom: 30px;
+}
+
+#total-num-bar {
+  width: calc(50%);
+  height: 600px;
+  margin-bottom: 30px;
+}
+
+.total-num-chart-area .total-num-chart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.total-num-chart-area .range-picker {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}

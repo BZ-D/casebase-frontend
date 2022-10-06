@@ -9,7 +9,7 @@ import { Outlet } from 'react-router-dom';
 const items = [
 	{
 		key: "cockpit",
-		label: "查询驾驶舱",
+		label: "可视化报表",
 		icon: <BarChartOutlined />
 	},
 	{
