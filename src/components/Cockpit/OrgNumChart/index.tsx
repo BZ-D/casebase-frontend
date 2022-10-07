@@ -38,7 +38,7 @@ const OrgNumChart: React.FC = () => {
     const pieOptions = {
       tooltip: {
         show: true,
-        formatter: '{c}%'
+        formatter: '{b}'
       },
       series: [
         {
@@ -98,30 +98,35 @@ const OrgNumChart: React.FC = () => {
           }
         </div>
         { loaded &&
-          <div className="range-picker">
-            <div>年份:</div>
-            <Select defaultValue={year} onChange={(v) => { setYear(v) }}>
-              {
-                YEARS.map(((year) => <Option value={year} key={year}>{year}年</Option>))
-              }
-            </Select>
-            <div>月份:</div>
-            <Select defaultValue={month} onChange={(v) => { setMonth(v) }}>
-              {
-                MONTHS.map(((month) =>
-                <Option value={month} key={month}>
-                  {month === 0 ? '全年' : `${month}月`}
-                </Option>))
-              }
-            </Select>
-            <Button
-              type="primary"
-              size="middle"
-              onClick={handleSearch}
-            >
-              查询
-            </Button>
-          </div>
+          <>
+            <div className="range-picker">
+              <div>年份:</div>
+              <Select defaultValue={year} onChange={(v) => { setYear(v) }}>
+                {
+                  YEARS.map(((year) => <Option value={year} key={year}>{year}年</Option>))
+                }
+              </Select>
+              <div>月份:</div>
+              <Select defaultValue={month} onChange={(v) => { setMonth(v) }}>
+                {
+                  MONTHS.map(((month) =>
+                  <Option value={month} key={month}>
+                    {month === 0 ? '全年' : `${month}月`}
+                  </Option>))
+                }
+              </Select>
+              <Button
+                type="primary"
+                size="middle"
+                onClick={handleSearch}
+              >
+                查询
+              </Button>
+            </div>
+            <div className="total-info">
+              处罚总数：{data.num} 例
+            </div>
+          </>
         }
         <Spin spinning={!loaded} tip="绘制图表中，请稍等……" style={{marginBottom: "30px", marginTop: "10px"}} />
         { loaded && 

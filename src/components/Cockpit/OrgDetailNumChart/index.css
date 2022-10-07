@@ -1,4 +1,4 @@
-.organ-num-chart-area {
+.organ-detail-num-chart-area {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,29 +10,29 @@
   padding: 20px 0 0 15px;
 }
 
-.organ-num-chart {
+.organ-detail-num-chart {
   width: 100%;
 }
 
-#organ-num-pie {
+#organ-detail-num-pie {
   width: 100%;
   height: 300px;
   margin-bottom: 30px;
 }
 
-#organ-num-bar {
+#organ-detail-num-bar {
   width: 100%;
   height: 330px;
   margin-bottom: 30px;
 }
 
-.organ-num-chart-area .organ-num-chart-title {
+.organ-detail-num-chart-area .organ-detail-num-chart-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.organ-num-chart-area .range-picker {
+.organ-detail-num-chart-area .range-picker {
   display: flex;
   flex-direction: row;
   column-gap: 10px;

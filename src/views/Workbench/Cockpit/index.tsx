@@ -6,6 +6,7 @@ import TotalNumChart from "../../../components/Cockpit/TotalNumChart";
 import TotalFineChart from "../../../components/Cockpit/TotalFineChart";
 import OrgNumChart from "../../../components/Cockpit/OrgNumChart";
 import OrgDetailNumChart from "../../../components/Cockpit/OrgDetailNumChart";
+import OrgDetailFineChart from "../../../components/Cockpit/OrgDetailFineChart";
 
 const Cockpit: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Cockpit: React.FC = () => {
           <TotalFineChart />
           <OrgNumChart />
           <OrgDetailNumChart />
+          <OrgDetailFineChart />
         </Col>
       </Row>
     </>

@@ -175,7 +175,7 @@ const ProvinceMap: React.FC = () => {
       <div className="province-map-area">
         <div className="province-map-title">
           {
-            month === 0 ? `${year}年全年各省处罚案例` : `${year}年${month}月各省处罚案例`
+            month === 0 ? `${year}年全年各省处罚案例分布` : `${year}年${month}月各省处罚案例分布`
           }
         </div>
         { loaded &&

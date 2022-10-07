@@ -1,4 +1,4 @@
-.total-fine-chart-area {
+.organ-detail-fine-chart-area {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,33 +10,32 @@
   padding: 20px 0 0 15px;
 }
 
-.total-fine-chart {
+.organ-detail-fine-chart {
   width: 100%;
 }
 
-#total-fine-pie {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 30px;
-}
-
-#total-fine-bar {
+#organ-detail-fine-pie {
   width: 100%;
   height: 300px;
   margin-bottom: 30px;
 }
 
-.total-fine-chart-area .total-fine-chart-title {
+#organ-detail-fine-bar {
+  width: 100%;
+  height: 330px;
+  margin-bottom: 30px;
+}
+
+.organ-detail-fine-chart-area .organ-detail-fine-chart-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.total-fine-chart-area .range-picker {
+.organ-detail-fine-chart-area .range-picker {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
 }

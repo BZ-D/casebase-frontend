@@ -38,7 +38,7 @@ const OrgDetailNumChart: React.FC = () => {
     const pieOptions = {
       tooltip: {
         show: true,
-        formatter: '{c}%'
+        formatter: '{b}'
       },
       series: [
         {
@@ -94,7 +94,7 @@ const OrgDetailNumChart: React.FC = () => {
       <div className="organ-detail-num-chart-area">
         <div className="organ-detail-num-chart-title">
           {
-            `${year}年${month === 0 ? '全年' : month + '月'}各类型机构受处罚数各月分布`
+            `${year}年${month === 0 ? '全年' : month + '月'}各具体机构受处罚数 Top10`
           }
         </div>
         { loaded &&
@@ -125,7 +125,7 @@ const OrgDetailNumChart: React.FC = () => {
         }
         <Spin spinning={!loaded} tip="绘制图表中，请稍等……" style={{marginBottom: "30px", marginTop: "10px"}} />
         { loaded && 
-          <Row className="orga-detail-num-chart">
+          <Row className="organ-detail-num-chart">
             <Col span={10}>
               <div id="organ-detail-num-pie" />
             </Col>
