@@ -1,6 +1,17 @@
 .chartArea {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   row-gap: 40px;
   margin-bottom: 50px;
+}
+
+.reportBtn {
+  width: 130px;
+}
+
+.reportHint {
+  font-size: 15px;
+  color: rgb(74, 74, 74);
 }
