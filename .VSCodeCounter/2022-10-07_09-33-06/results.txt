@@ -1,0 +1,109 @@
+Date : 2022-10-07 09:33:06
+Directory : d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new
+Total : 52 files,  32233 codes, 78 comments, 254 blanks, all 32565 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          4 |     29,988 |          0 |          3 |     29,991 |
+| TypeScript React   |         21 |      1,569 |         25 |        129 |      1,723 |
+| CSS                |         16 |        429 |          0 |         78 |        507 |
+| TypeScript         |          7 |        151 |          9 |         20 |        180 |
+| JSON with Comments |          1 |         26 |          0 |          1 |         27 |
+| Markdown           |          1 |         26 |          0 |         21 |         47 |
+| JavaScript         |          1 |         24 |         21 |          1 |         46 |
+| HTML               |          1 |         20 |         23 |          1 |         44 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                    | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                       |         52 |     32,233 |         78 |        254 |     32,565 |
+| public                                                                                                  |          2 |         45 |         23 |          2 |         70 |
+| src                                                                                                     |         45 |      2,173 |         55 |        228 |      2,456 |
+| src\api                                                                                                 |          2 |        113 |          8 |         12 |        133 |
+| src\common                                                                                              |          1 |          8 |          0 |          2 |         10 |
+| src\components                                                                                          |         23 |      1,500 |         17 |        148 |      1,665 |
+| src\components\CaseCard                                                                                 |          2 |         46 |          0 |          6 |         52 |
+| src\components\Cockpit                                                                                  |         12 |      1,037 |         17 |        100 |      1,154 |
+| src\components\Cockpit\OrgDetailFineChart                                                               |          2 |        164 |          2 |         17 |        183 |
+| src\components\Cockpit\OrgDetailNumChart                                                                |          2 |        164 |          2 |         17 |        183 |
+| src\components\Cockpit\OrgNumChart                                                                      |          2 |        170 |          2 |         17 |        189 |
+| src\components\Cockpit\ProvinceMap                                                                      |          2 |        220 |          7 |         15 |        242 |
+| src\components\Cockpit\TotalFineChart                                                                   |          2 |        160 |          2 |         17 |        179 |
+| src\components\Cockpit\TotalNumChart                                                                    |          2 |        159 |          2 |         17 |        178 |
+| src\components\FileDetail                                                                               |          7 |        298 |          0 |         30 |        328 |
+| src\components\FileDetail\Paper                                                                         |          2 |         40 |          0 |          8 |         48 |
+| src\components\FileDetail\Table                                                                         |          5 |        258 |          0 |         22 |        280 |
+| src\components\SearchBar                                                                                |          2 |        119 |          0 |         12 |        131 |
+| src\router                                                                                              |          1 |         24 |          0 |          2 |         26 |
+| src\utils                                                                                               |          4 |         54 |         21 |          7 |         82 |
+| src\views                                                                                               |         11 |        451 |          8 |         51 |        510 |
+| src\views\FileDetail                                                                                    |          2 |         67 |          1 |          6 |         74 |
+| src\views\Home                                                                                          |          2 |        165 |          7 |         16 |        188 |
+| src\views\Intro                                                                                         |          2 |         69 |          0 |          8 |         77 |
+| src\views\Workbench                                                                                     |          5 |        150 |          0 |         21 |        171 |
+| src\views\Workbench\Cockpit                                                                             |          2 |         32 |          0 |          2 |         34 |
+| src\views\Workbench\FileManage                                                                          |          1 |         14 |          0 |          2 |         16 |
++---------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\.eslintrc.json                                      | JSON               |          5 |          0 |          0 |          5 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\README.md                                           | Markdown           |         26 |          0 |         21 |         47 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\package-lock.json                                   | JSON               |     29,909 |          0 |          1 |     29,910 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\package.json                                        | JSON               |         49 |          0 |          1 |         50 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\public\index.html                                   | HTML               |         20 |         23 |          1 |         44 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\public\manifest.json                                | JSON               |         25 |          0 |          1 |         26 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\api\cockpit.ts                                  | TypeScript         |         90 |          8 |          9 |        107 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\api\file.ts                                     | TypeScript         |         23 |          0 |          3 |         26 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\common\constants.ts                             | TypeScript         |          8 |          0 |          2 |         10 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\CaseCard\index.module.css            | CSS                |         18 |          0 |          2 |         20 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\CaseCard\index.tsx                   | TypeScript React   |         28 |          0 |          4 |         32 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailFineChart\index.css | CSS                |         34 |          0 |          7 |         41 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailFineChart\index.tsx | TypeScript React   |        130 |          2 |         10 |        142 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailNumChart\index.css  | CSS                |         34 |          0 |          7 |         41 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailNumChart\index.tsx  | TypeScript React   |        130 |          2 |         10 |        142 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgNumChart\index.css        | CSS                |         35 |          0 |          7 |         42 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgNumChart\index.tsx        | TypeScript React   |        135 |          2 |         10 |        147 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\ProvinceMap\index.css        | CSS                |         26 |          0 |          5 |         31 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\ProvinceMap\index.tsx        | TypeScript React   |        194 |          7 |         10 |        211 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalFineChart\index.css     | CSS                |         35 |          0 |          7 |         42 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalFineChart\index.tsx     | TypeScript React   |        125 |          2 |         10 |        137 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalNumChart\index.css      | CSS                |         35 |          0 |          7 |         42 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalNumChart\index.tsx      | TypeScript React   |        124 |          2 |         10 |        136 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Paper\index.module.css    | CSS                |         19 |          0 |          4 |         23 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Paper\index.tsx           | TypeScript React   |         21 |          0 |          4 |         25 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\Table0.tsx          | TypeScript React   |         60 |          0 |          4 |         64 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\Table1.tsx          | TypeScript React   |         60 |          0 |          4 |         64 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\Table2.tsx          | TypeScript React   |         77 |          0 |          4 |         81 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\index.module.css    | CSS                |         29 |          0 |          5 |         34 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\index.tsx           | TypeScript React   |         32 |          0 |          5 |         37 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\SearchBar\index.module.css           | CSS                |         28 |          0 |          6 |         34 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\SearchBar\index.tsx                  | TypeScript React   |         91 |          0 |          6 |         97 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\index.css                                       | CSS                |         13 |          0 |          3 |         16 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\index.tsx                                       | TypeScript React   |         10 |          0 |          3 |         13 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\react-app-env.d.ts                              | TypeScript         |          0 |          1 |          0 |          1 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\router\index.tsx                                | TypeScript React   |         24 |          0 |          2 |         26 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\china.js                                  | JavaScript         |         24 |         21 |          1 |         46 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\filter.ts                                 | TypeScript         |          3 |          0 |          0 |          3 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\reportWebVitals.ts                        | TypeScript         |         13 |          0 |          3 |         16 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\request.ts                                | TypeScript         |         14 |          0 |          3 |         17 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\FileDetail\index.module.css               | CSS                |         23 |          0 |          2 |         25 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\FileDetail\index.tsx                      | TypeScript React   |         44 |          1 |          4 |         49 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Home\index.module.css                     | CSS                |         29 |          0 |          3 |         32 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Home\index.tsx                            | TypeScript React   |        136 |          7 |         13 |        156 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Intro\index.module.css                    | CSS                |         23 |          0 |          3 |         26 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Intro\index.tsx                           | TypeScript React   |         46 |          0 |          5 |         51 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\Cockpit\index.module.css        | CSS                |          6 |          0 |          0 |          6 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\Cockpit\index.tsx               | TypeScript React   |         26 |          0 |          2 |         28 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\FileManage\index.tsx            | TypeScript React   |         14 |          0 |          2 |         16 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\index.module.css                | CSS                |         42 |          0 |         10 |         52 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\index.tsx                       | TypeScript React   |         62 |          0 |          7 |         69 |
+| d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\tsconfig.json                                       | JSON with Comments |         26 |          0 |          1 |         27 |
+| Total                                                                                                   |                    |     32,233 |         78 |        254 |     32,565 |
++---------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

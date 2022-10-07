@@ -7,6 +7,7 @@
 	background-attachment: fixed;
 	background-size: cover;
 	overflow: hidden;
+  position: relative;
 }
 
 .homeSearchBar {
@@ -29,4 +30,10 @@
 .hintCenter {
 	position: absolute; left: 50%; top: 60%;
  	transform: translate(-50%, -50%);
+}
+
+.toIntroBtn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
 }

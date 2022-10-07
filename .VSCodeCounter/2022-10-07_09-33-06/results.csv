@@ -1,0 +1,54 @@
+"filename", "language", "JSON with Comments", "JSON", "TypeScript", "TypeScript React", "CSS", "Markdown", "HTML", "JavaScript", "comment", "blank", "total"
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\.eslintrc.json", "JSON", 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\README.md", "Markdown", 0, 0, 0, 0, 0, 26, 0, 0, 0, 21, 47
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\package-lock.json", "JSON", 0, 29909, 0, 0, 0, 0, 0, 0, 0, 1, 29910
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\package.json", "JSON", 0, 49, 0, 0, 0, 0, 0, 0, 0, 1, 50
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\public\index.html", "HTML", 0, 0, 0, 0, 0, 0, 20, 0, 23, 1, 44
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\public\manifest.json", "JSON", 0, 25, 0, 0, 0, 0, 0, 0, 0, 1, 26
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\api\cockpit.ts", "TypeScript", 0, 0, 90, 0, 0, 0, 0, 0, 8, 9, 107
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\api\file.ts", "TypeScript", 0, 0, 23, 0, 0, 0, 0, 0, 0, 3, 26
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\common\constants.ts", "TypeScript", 0, 0, 8, 0, 0, 0, 0, 0, 0, 2, 10
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\CaseCard\index.module.css", "CSS", 0, 0, 0, 0, 18, 0, 0, 0, 0, 2, 20
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\CaseCard\index.tsx", "TypeScript React", 0, 0, 0, 28, 0, 0, 0, 0, 0, 4, 32
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailFineChart\index.css", "CSS", 0, 0, 0, 0, 34, 0, 0, 0, 0, 7, 41
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailFineChart\index.tsx", "TypeScript React", 0, 0, 0, 130, 0, 0, 0, 0, 2, 10, 142
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailNumChart\index.css", "CSS", 0, 0, 0, 0, 34, 0, 0, 0, 0, 7, 41
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgDetailNumChart\index.tsx", "TypeScript React", 0, 0, 0, 130, 0, 0, 0, 0, 2, 10, 142
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgNumChart\index.css", "CSS", 0, 0, 0, 0, 35, 0, 0, 0, 0, 7, 42
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\OrgNumChart\index.tsx", "TypeScript React", 0, 0, 0, 135, 0, 0, 0, 0, 2, 10, 147
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\ProvinceMap\index.css", "CSS", 0, 0, 0, 0, 26, 0, 0, 0, 0, 5, 31
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\ProvinceMap\index.tsx", "TypeScript React", 0, 0, 0, 194, 0, 0, 0, 0, 7, 10, 211
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalFineChart\index.css", "CSS", 0, 0, 0, 0, 35, 0, 0, 0, 0, 7, 42
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalFineChart\index.tsx", "TypeScript React", 0, 0, 0, 125, 0, 0, 0, 0, 2, 10, 137
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalNumChart\index.css", "CSS", 0, 0, 0, 0, 35, 0, 0, 0, 0, 7, 42
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\Cockpit\TotalNumChart\index.tsx", "TypeScript React", 0, 0, 0, 124, 0, 0, 0, 0, 2, 10, 136
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Paper\index.module.css", "CSS", 0, 0, 0, 0, 19, 0, 0, 0, 0, 4, 23
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Paper\index.tsx", "TypeScript React", 0, 0, 0, 21, 0, 0, 0, 0, 0, 4, 25
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\Table0.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 4, 64
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\Table1.tsx", "TypeScript React", 0, 0, 0, 60, 0, 0, 0, 0, 0, 4, 64
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\Table2.tsx", "TypeScript React", 0, 0, 0, 77, 0, 0, 0, 0, 0, 4, 81
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\index.module.css", "CSS", 0, 0, 0, 0, 29, 0, 0, 0, 0, 5, 34
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\FileDetail\Table\index.tsx", "TypeScript React", 0, 0, 0, 32, 0, 0, 0, 0, 0, 5, 37
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\SearchBar\index.module.css", "CSS", 0, 0, 0, 0, 28, 0, 0, 0, 0, 6, 34
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\components\SearchBar\index.tsx", "TypeScript React", 0, 0, 0, 91, 0, 0, 0, 0, 0, 6, 97
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\index.css", "CSS", 0, 0, 0, 0, 13, 0, 0, 0, 0, 3, 16
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\index.tsx", "TypeScript React", 0, 0, 0, 10, 0, 0, 0, 0, 0, 3, 13
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\react-app-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\router\index.tsx", "TypeScript React", 0, 0, 0, 24, 0, 0, 0, 0, 0, 2, 26
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\china.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 24, 21, 1, 46
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\filter.ts", "TypeScript", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\reportWebVitals.ts", "TypeScript", 0, 0, 13, 0, 0, 0, 0, 0, 0, 3, 16
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\utils\request.ts", "TypeScript", 0, 0, 14, 0, 0, 0, 0, 0, 0, 3, 17
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\FileDetail\index.module.css", "CSS", 0, 0, 0, 0, 23, 0, 0, 0, 0, 2, 25
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\FileDetail\index.tsx", "TypeScript React", 0, 0, 0, 44, 0, 0, 0, 0, 1, 4, 49
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Home\index.module.css", "CSS", 0, 0, 0, 0, 29, 0, 0, 0, 0, 3, 32
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Home\index.tsx", "TypeScript React", 0, 0, 0, 136, 0, 0, 0, 0, 7, 13, 156
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Intro\index.module.css", "CSS", 0, 0, 0, 0, 23, 0, 0, 0, 0, 3, 26
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Intro\index.tsx", "TypeScript React", 0, 0, 0, 46, 0, 0, 0, 0, 0, 5, 51
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\Cockpit\index.module.css", "CSS", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 6
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\Cockpit\index.tsx", "TypeScript React", 0, 0, 0, 26, 0, 0, 0, 0, 0, 2, 28
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\FileManage\index.tsx", "TypeScript React", 0, 0, 0, 14, 0, 0, 0, 0, 0, 2, 16
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\index.module.css", "CSS", 0, 0, 0, 0, 42, 0, 0, 0, 0, 10, 52
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\src\views\Workbench\index.tsx", "TypeScript React", 0, 0, 0, 62, 0, 0, 0, 0, 0, 7, 69
+"d:\StudyFiles\学习资料\大四上\互联网实践\code\case_frontend_new\tsconfig.json", "JSON with Comments", 26, 0, 0, 0, 0, 0, 0, 0, 0, 1, 27
+"Total", "-", 26, 29988, 151, 1569, 429, 26, 20, 24, 78, 254, 32565

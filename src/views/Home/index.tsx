@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.css';
 import { useSearchParams, useNavigate } from "react-router-dom";
-import { message, Spin, Pagination, Result } from 'antd';
+import { message, Spin, Pagination, Result, Button } from 'antd';
 import SearchBar from '../../components/SearchBar';
 import CaseCard from '../../components/CaseCard';
 import { getFilesAPI } from '../../api/file';
+import { HomeOutlined } from '@ant-design/icons';
 
 const Home: React.FC = () => {
   const [searchParams] = useSearchParams(); // 取查询参数
@@ -96,8 +97,23 @@ const Home: React.FC = () => {
 		}
 	};
 
+  // 回到主页
+  const handleGotoIntro = () => {
+    navigate('/');
+  };
+
 	return (
 		<div className={styles.Home}>
+      <Button
+        className={styles.toIntroBtn}
+        type="default"
+        shape="round"
+        icon={<HomeOutlined />}
+        size="middle"
+        onClick={handleGotoIntro}
+      >
+        前往主页
+      </Button>
 			<SearchBar
 				className={styles.homeSearchBar}
 				handleSearch={handleSearch}
