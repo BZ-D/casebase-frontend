@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { getTotalNumAPI } from "../../../api/cockpit";
+import { getTotalFineAPI } from "../../../api/cockpit";
 import { Select, Button, Spin, Row, Col } from "antd";
 import { YEARS } from "../../../common/constants";
 import * as echarts from 'echarts';
@@ -7,7 +7,7 @@ import './index.css';
 
 const { Option } = Select;
 
-const TotalNumChart: React.FC = () => {
+const TotalFineChart: React.FC = () => {
   const [loaded, setLoaded] = useState(false); // 数据是否加载完成，用于图表展示
   const [data, setData] = useState({} as any); // 各个省的数据
 
@@ -18,7 +18,7 @@ const TotalNumChart: React.FC = () => {
 
   // 初始化数据
   useEffect(() => {
-    getTotalNumAPI({ year, month: 0 }).then(res => {
+    getTotalFineAPI({ year, month: 0 }).then(res => {
       setData(res);
       setLoaded(true);
     });
@@ -30,8 +30,8 @@ const TotalNumChart: React.FC = () => {
     
     if (Object.keys(finishedPie).length !== 0) finishedPie.dispose();  // 重绘时需销毁原图
     if (Object.keys(finishedBar).length !== 0) finishedBar.dispose();  // 重绘时需销毁原图
-    const pie = document.getElementById('total-num-pie') as HTMLElement;
-    const bar = document.getElementById('total-num-bar') as HTMLElement;
+    const pie = document.getElementById('total-fine-pie') as HTMLElement;
+    const bar = document.getElementById('total-fine-bar') as HTMLElement;
     const pieChart = echarts.init(pie);
     const barChart = echarts.init(bar);
     const pieOptions = {
@@ -43,7 +43,8 @@ const TotalNumChart: React.FC = () => {
         {
           type: 'pie',
           data: Object.keys(data.content).map((key) => {
-            const percent = Math.round(Number((data.content[key] / data.num).toFixed(2)) * 100);
+            const total = Math.abs(data.num);
+            const percent = Math.round(Number((Math.abs(data.content[key]) / total).toFixed(2)) * 100);
             return { name: `${key}(${percent}%)`, value: percent };
           })
         }
@@ -62,7 +63,7 @@ const TotalNumChart: React.FC = () => {
       series: [
         {
           type: 'bar',
-          data: Object.keys(data.content).map((key) => data.content[key]),
+          data: Object.keys(data.content).map((key) => Math.abs(data.content[key])),
           label: {
             show: true, //开启显示
             position: 'top', //在上方显示
@@ -81,7 +82,7 @@ const TotalNumChart: React.FC = () => {
 
   const handleSearch = () => {
     setLoaded(false);
-    getTotalNumAPI({ year, month: 0 }).then(res => {
+    getTotalFineAPI({ year, month: 0 }).then(res => {
       setData(res);
       setLoaded(true);
     });
@@ -89,10 +90,10 @@ const TotalNumChart: React.FC = () => {
 
   return (
     <>
-      <div className="total-num-chart-area">
-        <div className="total-num-chart-title">
+      <div className="total-fine-chart-area">
+        <div className="total-fine-chart-title">
           {
-            `${year}年全年银保监会处罚案例数量各月分布`
+            `${year}年全年银保监会罚金数额各月分布`
           }
         </div>
         { loaded &&
@@ -114,12 +115,12 @@ const TotalNumChart: React.FC = () => {
         }
         <Spin spinning={!loaded} tip="绘制图表中，请稍等……" style={{marginBottom: "30px", marginTop: "10px"}} />
         { loaded && 
-          <Row className="total-num-chart">
+          <Row className="total-fine-chart">
             <Col span={12}>
-              <div id="total-num-pie" />
+              <div id="total-fine-pie" />
             </Col>
             <Col span={12}>
-              <div id="total-num-bar" />
+              <div id="total-fine-bar" />
             </Col>
           </Row>
         }
@@ -128,4 +129,4 @@ const TotalNumChart: React.FC = () => {
   )
 };
 
-export default TotalNumChart;
+export default TotalFineChart;
