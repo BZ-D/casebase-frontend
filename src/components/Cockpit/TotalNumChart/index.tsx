@@ -30,6 +30,7 @@ const TotalNumChart: React.FC = () => {
     
     if (Object.keys(finishedPie).length !== 0) finishedPie.dispose();  // 重绘时需销毁原图
     if (Object.keys(finishedBar).length !== 0) finishedBar.dispose();  // 重绘时需销毁原图
+    
     const pie = document.getElementById('total-num-pie') as HTMLElement;
     const bar = document.getElementById('total-num-bar') as HTMLElement;
     const pieChart = echarts.init(pie);

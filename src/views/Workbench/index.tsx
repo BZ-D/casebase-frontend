@@ -17,7 +17,7 @@ const items = [
 		label: "文书管理",
 		icon: <ContainerOutlined />
 	}
-];
+]; // 左侧导航的 item
 
 const Workbench: React.FC = () => {
 	const navigate = useNavigate();

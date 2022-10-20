@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css';
-import { Button, message } from 'antd'; 
+import { Button, message, Modal } from 'antd'; 
 import { ToolOutlined, UserOutlined } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 import SearchBar from '../../components/SearchBar';
@@ -29,6 +29,24 @@ const Intro: React.FC = () => {
 		navigate(`/search?kwd=${content}&st=${startTime}&et=${endTime}&order=${order}`);
 	};
 
+  const showGroupInfo = () => {
+    Modal.info({
+      title: '互联网实践项目第 4 组',
+      content: (
+        <div>
+          <br />
+          <p>丁炳智  191250024</p>
+          <p>冯夏浵  191250032</p>
+          <p>林威鹏  191250087</p>
+          <p>许　燚  191250168</p>
+          <p>郑伟鑫  191250206</p>
+        </div>
+      ),
+      okText: '关闭',
+      maskClosable: true
+    })
+  }
+
   const gotoWorkbench = () => {
     navigate('/workbench/cockpit');
   };
@@ -36,7 +54,7 @@ const Intro: React.FC = () => {
 	return (
 		<div className={styles.Home}>
 			<div className={styles.btnArea}>
-				<Button type="default" shape="round" icon={<UserOutlined />} size="large">
+				<Button type="default" shape="round" icon={<UserOutlined />} size="large" onClick={showGroupInfo}>
 					小组信息
 				</Button>
 				<Button type="default" shape="round" icon={<ToolOutlined />} size="large" onClick={gotoWorkbench}>

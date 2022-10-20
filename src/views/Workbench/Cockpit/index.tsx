@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './index.module.css';
 import { Row, Col, Button } from 'antd';
-import { VerticalAlignBottomOutlined } from '@ant-design/icons';
+import { VerticalAlignBottomOutlined, LoadingOutlined } from '@ant-design/icons';
 import ProvinceMap from "../../../components/Cockpit/ProvinceMap";
 import TotalNumChart from "../../../components/Cockpit/TotalNumChart";
 import TotalFineChart from "../../../components/Cockpit/TotalFineChart";
@@ -11,6 +11,8 @@ import OrgDetailFineChart from "../../../components/Cockpit/OrgDetailFineChart";
 import { downloadReport } from "../../../utils/report";
 
 const Cockpit: React.FC = () => {
+  const [exportBtnDisabled, setExportBtnDisabled] = useState(false); // 导出按钮是否禁用
+
   return (
     <>
       <Row>
@@ -18,10 +20,16 @@ const Cockpit: React.FC = () => {
           <Button
             type="primary"
             className={styles.reportBtn}
-            icon={<VerticalAlignBottomOutlined />}
+            icon={exportBtnDisabled ? <LoadingOutlined /> : <VerticalAlignBottomOutlined />}
             size="large"
             shape="round"
-            onClick={downloadReport}
+            disabled={exportBtnDisabled}
+            onClick={() => {
+              setExportBtnDisabled(true);
+              downloadReport().then(() => {
+                setExportBtnDisabled(false);
+              })
+            }}
           >
             导出报告
           </Button>

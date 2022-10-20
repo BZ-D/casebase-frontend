@@ -4,7 +4,14 @@ import { jsPDF } from 'jspdf';
 const doc = new jsPDF('l', 'pt');
 
 export const downloadReport = async () => {
-  const charts = ['province-map-area', 'total-num-chart-area', 'total-fine-chart-area', 'organ-num-chart-area', 'organ-detail-num-chart-area', 'organ-detail-fine-chart-area'];
+  const charts = [
+    'province-map-area',
+    'total-num-chart-area',
+    'total-fine-chart-area',
+    'organ-num-chart-area',
+    'organ-detail-num-chart-area',
+    'organ-detail-fine-chart-area'
+  ];
 
   for (let i = 0; i < charts.length; i++) {
     const res = await html2canvas(document.getElementsByClassName(charts[i])[0] as HTMLElement);
