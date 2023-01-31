@@ -1,0 +1,39 @@
+.mapArea {
+  position: fixed;
+  top: 70px;
+  right: 5rem;
+  width: 35%;
+}
+
+.mapArea h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #7b7b7b;
+  background-color: #ffffff;
+  border: 1.5px solid rgb(238, 238, 238);
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding: 10px 24px 5px 24px;
+}
+
+.mapArea > div {
+  padding: 16px 24px 24px 24px;
+  background-color: #ffffff;
+  border: 1.5px solid rgb(238, 238, 238);
+}
+
+.mapArea > .mapOrigin {
+  margin-bottom: 30px;
+  overflow: auto;
+  max-height: 180px;
+}
+
+.mapArea > .mapOrigin > span {
+  color: #4bc1b5;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.mapArea > .mapResult {
+
+}

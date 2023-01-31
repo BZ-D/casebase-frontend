@@ -3,11 +3,11 @@
   min-width: 550px;
   height: fit-content;
 
-  margin: 70px auto 50px auto;
+  margin: 70px 0 50px 0;
   padding: 4rem 3rem;
 
   background-color: #ffffff;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  border: 1.5px solid rgb(238, 238, 238);
 }
 
 .paperTitle {
@@ -20,4 +20,8 @@
 .paperContent {
   color: rgb(49, 49, 49);
   font-size: 16px;
+}
+
+.paperContent *::selection {
+  background-color: #4bc1b5;
 }

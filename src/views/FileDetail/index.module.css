@@ -15,11 +15,16 @@
   background-color: #f1f1f1;
   padding-left: 20px;
   border-bottom: 1px solid #e8e8e8;
+  z-index: 100;
 }
 
 .topBarTitle {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 40px;
   color: #7b7b7b;
+}
+
+.contentArea {
+  margin-left: 10%;
 }
