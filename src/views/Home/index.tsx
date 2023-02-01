@@ -161,8 +161,8 @@ const Home: React.FC = () => {
 				<Result
 					className={styles.hintCenter}
 					status="404"
-					title="暂无检索结果，请稍后再试"
-					subTitle="请尝试调整搜索日期范围或关键词。"
+					title="暂无检索结果"
+					subTitle="请尝试调整搜索日期范围或关键词"
   			/>
       }
 		</div>

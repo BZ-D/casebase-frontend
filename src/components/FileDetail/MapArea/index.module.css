@@ -13,11 +13,11 @@
   border: 1.5px solid rgb(238, 238, 238);
   border-bottom: 0;
   margin-bottom: 0;
-  padding: 10px 24px 5px 24px;
+  padding: 10px 24px 10px 24px;
 }
 
 .mapArea > div {
-  padding: 16px 24px 24px 24px;
+  padding: 16px 24px;
   background-color: #ffffff;
   border: 1.5px solid rgb(238, 238, 238);
 }
@@ -25,15 +25,37 @@
 .mapArea > .mapOrigin {
   margin-bottom: 30px;
   overflow: auto;
-  max-height: 180px;
+  max-height: 20vh;
 }
 
-.mapArea > .mapOrigin > span {
-  color: #4bc1b5;
-  font-weight: 500;
+.mapArea > .mapOrigin > span,
+.mapArea > .mapResult > span
+{
   font-size: 1rem;
+  font-weight: 500;
+  color: #616161;
 }
 
 .mapArea > .mapResult {
+  display: flex;
+  height: calc(85vh - 20vh - 70px - 30px);
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.mapResultTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mapResultHint {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.switchBtnArea {
+  margin: 0 auto;
+  display: flex;
+  column-gap: 4em;
 }

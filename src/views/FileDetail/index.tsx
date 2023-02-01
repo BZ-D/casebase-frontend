@@ -14,7 +14,7 @@ const FileDetail: React.FC = () => {
   const params = useParams();
   const docId = Number(params.docId);
 
-  const retrieve = () => {
+  const handleSelect = () => {
     const newText = window?.getSelection()?.toString();
     if (!newText || newText === selectedText) return;
     setSelectedText(newText);
@@ -30,9 +30,9 @@ const FileDetail: React.FC = () => {
   // 注册监听器，监听mouseup事件，获取选中的文本
   useEffect(() => {
     const contentElement = document.querySelector(`.${styles.contentArea}`);
-    contentElement?.addEventListener('mouseup', retrieve, true);
+    contentElement?.addEventListener('mouseup', handleSelect, true);
 
-    return contentElement?.removeEventListener('mouseup', retrieve);
+    return contentElement?.removeEventListener('mouseup', handleSelect);
   }, []);
 
   return (
