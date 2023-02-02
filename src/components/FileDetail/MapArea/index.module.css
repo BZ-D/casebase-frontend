@@ -39,6 +39,7 @@
 .mapArea > .mapResult {
   display: flex;
   height: calc(85vh - 20vh - 70px - 30px);
+  overflow: auto;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -54,8 +55,21 @@
   font-weight: 500;
 }
 
+.infoArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1.25rem;
+  margin-top: 1.25em;
+}
+
+.infoArea .baseInfo {
+  display: flex;
+  flex-direction: column;
+}
+
 .switchBtnArea {
-  margin: 0 auto;
+  align-self: center;
   display: flex;
   column-gap: 4em;
 }
