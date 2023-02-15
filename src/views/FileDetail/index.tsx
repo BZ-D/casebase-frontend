@@ -9,7 +9,7 @@ import { Spin } from 'antd';
 
 const FileDetail: React.FC = () => {
   const [type, setType] = useState('');
-  const [fileDetails, setFileDetails] = useState({});
+  const [fileDetails, setFileDetails] = useState({} as any);
   const [selectedText, setSelectedText] = useState('');
   const params = useParams();
   const docId = Number(params.docId);
@@ -59,7 +59,7 @@ const FileDetail: React.FC = () => {
         }
       </div>
       {
-        Object.keys(fileDetails).length !== 0 && <MapArea selectedText={selectedText} />
+        Object.keys(fileDetails).length !== 0 && <MapArea inputFileName={fileDetails.name} selectedText={selectedText} />
       }
     </div>
   )

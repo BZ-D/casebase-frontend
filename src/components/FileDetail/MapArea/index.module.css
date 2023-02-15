@@ -44,6 +44,24 @@
   justify-content: space-between;
 }
 
+.mapOriginTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mapOriginTitle span + span {
+  color: #0DB68A;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: .2s ease-in-out;
+}
+
+.mapOriginTitle span + span:hover {
+  color: #10c696;
+  cursor: pointer;
+}
+
 .mapResultTitle {
   display: flex;
   justify-content: space-between;
@@ -72,4 +90,18 @@
   align-self: center;
   display: flex;
   column-gap: 4em;
+}
+
+.mapConfArea {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.mapConfItem {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
 }
